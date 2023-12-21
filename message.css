@@ -1,5 +1,103 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-y: auto;
+}
+
+@font-face {
+    font-family: Tektur;
+    src: url(Tektur-VariableFont_wdth\,wght.ttf);
+}
+
+.homepage {
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    border: 2px solid;
+    border-color: yellow;
+    isolation: isolate;
+    font-family: Tektur;
+    color: yellow;
+}
+
+.homepage::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    background: url('background1.png');
+    inset: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .8;
+}
+
+.homepage a {
+    text-decoration: none;
+    color: yellow;
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.homepage a:hover {
+    color: black;
+    background-color: yellow;
+}
+
+@media screen and (max-width: 600px) {
+    .homepage {
+        position: relative;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        border: 2px solid;
+        border-color: yellow;
+        isolation: isolate;
+        font-family: Tektur;
+        color: yellow;
+    }
+
+    .homepage::after {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        background: url('bg2.jpg');
+        inset: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: .5;
+    }
+
+    .homepage p{
+        margin-top: 8rem;
+        color: yellow;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .homepage a {
+        text-decoration: none;
+        color: yellow;
+        border: 2px solid;
+        border-radius: 25px;
+        padding: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .homepage a:hover {
+        color: black;
+        background-color: yellow;
+    }
 }

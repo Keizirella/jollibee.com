@@ -106,6 +106,7 @@ h1 {
     h1 {
         margin-right: 2%;
         font-size: 50px;
+        color: yellow;
     }
 
     .selection div a {
@@ -118,7 +119,7 @@ h1 {
         cursor: pointer;
         font-size: 25px;
         text-align: center;
-        padding: 2rem 3rem;
+        padding: 2rem 2.5rem;
     }
 
     .selection div a:hover {
